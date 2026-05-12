@@ -39,14 +39,17 @@ More generally, if $f(x)$ is defined in the interval $(c−d,c+d)$ then
 
 $$f(x)\sim \frac{a_0}{2}+\sum_{n=1}^{\infty}a_ncos(\frac{n\pi(x+c)}{d}) +b_nsin(\frac{n\pi(x+c)}{d})$$ in cui $$a_n=\frac{1}{d}\int_{c-d}^{c+d}f(x)cos(\frac{n\pi(x+c)}{d})dx, \\  b_n=\frac{1}{d}\int_{c-d}^{c+d}f(x)sin(\frac{n\pi(x+c)}{d})dx.$$
 
-Taking into account the Euler identity ($eix=cos(x)+i⋅sin(x)$) it is possible to rewrite the Fourier series as follows
+Taking into account the Euler identity ( $eix=cos(x)+i⋅sin(x)$ ) it is possible to rewrite the Fourier series as follows
 $$\frac{a_0}{2}+\sum_{n=1}^{\infty}(a_ncos(nx)+b_nsin(nx))=\sum_{n=-\infty}^{+\infty}c_ne^{inx} $$
 where
-$c_n=\begin{cases}
-    \frac{1}{2}(a_{n}-ib_{n}) & n\geq 1\\
-    \frac{a_0}{2} & n=0\\
-    \frac{1}{2}(a_{-n}-ib_{-n}) & n\leq -1.
-\end{cases}$
+$$
+c_n =
+\begin{cases}
+\frac{1}{2}(a_n - i b_n) & n \geq 1 \\
+\frac{a_0}{2} & n = 0 \\
+\frac{1}{2}(a_{-n} - i b_{-n}) & n \leq -1
+\end{cases}
+$$
 
 From which, in general
 $$f(x)=\sum_{-\infty}^{+\infty}c_n\frac{\pi}{L} e^{\frac{in\pi x}{L}}$$ with $$c_n=\frac{1}{2\pi}\int_{-L}^{L}e^{\frac{-in\pi x}{L}}f(x)dx.$$
