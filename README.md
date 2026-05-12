@@ -42,6 +42,7 @@ $$f(x)\sim \frac{a_0}{2}+\sum_{n=1}^{\infty}a_ncos(\frac{n\pi(x+c)}{d}) +b_nsin(
 Taking into account the Euler identity ( $eix=cos(x)+i⋅sin(x)$ ) it is possible to rewrite the Fourier series as follows
 $$\frac{a_0}{2}+\sum_{n=1}^{\infty}(a_ncos(nx)+b_nsin(nx))=\sum_{n=-\infty}^{+\infty}c_ne^{inx} $$
 where
+
 $$c_n =
 \begin{cases}
 \frac{1}{2}(a_n - i b_n) & n \geq 1 \\
